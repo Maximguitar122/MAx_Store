@@ -1,0 +1,148 @@
+.side {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  background: #e8e3e3;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  font-family:'Roboto', sans-serif;
+  min-height: 20vh;
+}
+
+.side h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.side ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side li {
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.side li:hover {
+  background: #d8d87f;
+  color: #222;
+  transform: translateX(5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.side li:active {
+  transform: translateX(2px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+@media (max-width: 768px) {
+  .side {
+    width: 180px;
+    padding: 12px;
+  }
+
+  .side li {
+    font-size: 14px;
+    padding: 8px 14px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+
+  .side h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .side {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    min-height: auto;
+  }
+
+  .side ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .side li {
+    flex: 1 1 45%;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: 13px;
+    transform: none;
+  }
+
+  .side li:hover {
+    transform: none;
+  }
+}
+
+.ad-box {
+
+  margin: 30px auto;
+  align-self: center;
+  margin-top: auto;
+  background: linear-gradient(135deg, #ffe16d, #ffc04a);
+  border-radius: 14px;
+  text-align: center;
+  padding: 20px 10px;
+  font-weight: 700;
+  font-size: 46px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  font-family:'Roboto', sans-serif;
+}
+
+.ad-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+@media (max-width: 992px) {
+  .ad-box {
+    font-size: 32px;
+    padding: 18px 8px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .ad-box {
+    font-size: 24px;
+    padding: 15px;
+    margin: 15px auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ad-box {
+    font-size: 18px;
+    padding: 12px;
+    margin: 10px auto;
+    width: 95%;
+  }
+}

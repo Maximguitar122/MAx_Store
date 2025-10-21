@@ -1,0 +1,141 @@
+.orders-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.orders-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+
+.order-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.order-header h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.order-status {
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.order-status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.order-status.completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.order-status.canceled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+
+.order-items {
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  display: grid;
+  gap: 10px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.order-item-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.order-item p {
+  margin: 2px 0;
+  font-size: 0.95rem;
+}
+
+
+@media (max-width: 768px) {
+  .orders-container {
+    padding: 10px;
+  }
+
+  .order-card {
+    padding: 12px;
+  }
+
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .orders-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .order-header h2 {
+    font-size: 1rem;
+  }
+
+  .order-status {
+    font-size: 0.85rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .order-item p {
+    font-size: 0.85rem;
+  }
+  .order-card {
+    border-radius: 8px;
+  }
+}
